@@ -15,9 +15,9 @@ import java.util.HashMap;
  */
 
 public class PermissionHelper {
-    private static int callbackKey = 1;//=requestCode used as key for callback for each request
-    private static HashMap<Integer, PermissionCallBack> mCallBacks;
-    private static PermissionHelper instance;
+    protected static int callbackKey = 1;//=requestCode used as key for callback for each request
+    protected static HashMap<Integer, PermissionCallBack> mCallBacks;
+    protected static PermissionHelper instance;
 
     public static PermissionHelper getInstance() {
         if(instance == null){

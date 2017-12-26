@@ -28,6 +28,15 @@ public class TestActivityModule {
     private final Context context;
     private ServerHelper serverHelper;
     private CommentModel commentModel;
+    private LocationServices locationServices;
+    private MemberHelper memberHelper;
+    private LocationHelper locationHelper;
+    private EzlySearchParam searchParam;
+    private ImagePickerHelper imagePickerHelper;
+    private MultiImagePickerHelper multiImagePickerHelper;
+    private NotificationHelper notificationHelper;
+    private TestPermissionHelper permissionHelper;
+
 
     public TestActivityModule(Context context) {
         this.context = context;
@@ -43,7 +52,7 @@ public class TestActivityModule {
     @PerActivity
     public ServerHelper provideServerHelper(){
         if(serverHelper == null){
-            serverHelper = new TestServerHelper(provideLocationHelper(), provideSearchParam());
+            serverHelper = Mockito.spy(new TestServerHelper(provideLocationHelper(), provideSearchParam()));
         }
 
         return serverHelper;
@@ -61,42 +70,74 @@ public class TestActivityModule {
 
     @Provides @PerActivity
     public LocationServices provideLocationServices(){
-        return LocationServices.getLocationServices(context);
+        if(locationServices == null){
+            locationServices = Mockito.spy(LocationServices.getLocationServices(context));;
+        }
+        return locationServices;
+
     }
 
     @Provides @PerActivity
     public MemberHelper provideMemberHelper(){
-        return MemberHelper.getInstance(provideServerHelper());
+        if(memberHelper == null){
+            memberHelper = Mockito.spy(MemberHelper.getInstance(provideServerHelper()));
+        }
+        return memberHelper;
+
     }
 
     @Provides @PerActivity
     public LocationHelper provideLocationHelper(){
-        return LocationHelper.getInstance(providePermissionHelper());
+        if(locationHelper == null){
+            locationHelper = Mockito.spy(LocationHelper.getInstance(providePermissionHelper()));
+        }
+        return locationHelper;
+
     }
 
     @Provides @PerActivity
     public EzlySearchParam provideSearchParam(){
-        return EzlySearchParam.getInstance(provideLocationHelper());
+        if(searchParam == null){
+            searchParam = Mockito.spy(EzlySearchParam.getInstance(provideLocationHelper()));
+        }
+        return searchParam;
+
     }
 
     @Provides @PerActivity
     public ImagePickerHelper provideImagePickerHelper(){
-        return ImagePickerHelper.getInstance(providePermissionHelper());
+        if(imagePickerHelper == null){
+            imagePickerHelper = Mockito.spy(ImagePickerHelper.getInstance(providePermissionHelper()));
+        }
+        return imagePickerHelper;
+
     }
 
     @Provides @PerActivity
     public MultiImagePickerHelper provideMultiImagePickerHelper(){
-        return MultiImagePickerHelper.getInstance();
+        if(multiImagePickerHelper == null){
+            multiImagePickerHelper = Mockito.spy(MultiImagePickerHelper.getInstance());
+        }
+        return multiImagePickerHelper;
+
     }
 
     @Provides @PerActivity
     public NotificationHelper provideNotificationHelper(){
-        return NotificationHelper.getInstance();
+        if(notificationHelper == null){
+            notificationHelper = Mockito.spy(NotificationHelper.getInstance());;
+        }
+        return notificationHelper;
+
     }
 
     @Provides @PerActivity
     public PermissionHelper providePermissionHelper(){
-        return TestPermissionHelper.getInstance();
+        if(permissionHelper == null){
+            permissionHelper = Mockito.spy(TestPermissionHelper.getInstance());
+        }
+        return permissionHelper;
+
     }
 
 

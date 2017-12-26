@@ -122,7 +122,6 @@
     <orderEntry type="library" exported="" scope="TEST" name="sqlite4java-0.282" level="project" />
     <orderEntry type="library" exported="" name="Android-SpinKit-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="mapbox-android-sdk-4.2.0-beta.3" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="byte-buddy-0.6.14" level="project" />
     <orderEntry type="library" exported="" name="recyclerview-v7-25.4.0" level="project" />
     <orderEntry type="library" exported="" name="lost-1.1.0" level="project" />
     <orderEntry type="library" exported="" name="butterknife-annotations-8.4.0" level="project" />
@@ -138,7 +137,9 @@
     <orderEntry type="library" exported="" name="javax.annotation-10.0-b28" level="project" />
     <orderEntry type="library" exported="" name="crashlytics-core-2.3.14" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="asm-util-5.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="mockito-core-2.1.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-auth-base-9.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="byte-buddy-1.4.26" level="project" />
     <orderEntry type="library" exported="" name="facebook-android-sdk-4.17.0-unspecified" level="project" />
     <orderEntry type="library" exported="" name="retrofit-2.1.0" level="project" />
     <orderEntry type="library" exported="" name="converter-gson-2.1.0" level="project" />
@@ -182,11 +183,11 @@
     <orderEntry type="library" exported="" scope="TEST" name="ant-1.8.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="xstream-1.4.8" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="bcprov-jdk16-1.46" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="objenesis-2.4" level="project" />
     <orderEntry type="library" exported="" name="firebase-core-9.0.0" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="objenesis-2.1" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="mockito-core-2.0.31-beta" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="robolectric-annotations-3.1" level="project" />
     <orderEntry type="library" exported="" name="play-services-analytics-9.0.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="byte-buddy-agent-1.4.26" level="project" />
     <orderEntry type="library" exported="" name="play-services-basement-9.0.0" level="project" />
     <orderEntry type="library" exported="" name="rxjava-1.1.6" level="project" />
     <orderEntry type="library" exported="" name="beta-1.2.2" level="project" />

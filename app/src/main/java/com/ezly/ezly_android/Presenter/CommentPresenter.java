@@ -114,7 +114,7 @@ public class CommentPresenter extends BasePresenter {
         };
     }
 
-    public Action1<Throwable> onRequestError() {
+    protected Action1<Throwable> onRequestError() {
         return new Action1<Throwable>() {
             @Override
             public void call(Throwable throwable) {

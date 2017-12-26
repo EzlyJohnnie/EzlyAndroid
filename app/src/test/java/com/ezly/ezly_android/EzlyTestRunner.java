@@ -6,6 +6,8 @@ import org.robolectric.annotation.Config;
 import org.robolectric.manifest.AndroidManifest;
 import org.robolectric.res.Fs;
 
+import java.io.File;
+
 /**
  * Created by Johnnie on 26/12/17.
  */
@@ -24,11 +26,14 @@ public class EzlyTestRunner extends RobolectricTestRunner {
 
     @Override
     protected AndroidManifest getAppManifest(Config config) {
-        String appRoot = "../../../../../../app/src/main/";
-        String manifestPath = appRoot + "AndroidManifest.xml";
+        String appRoot = "app/src/main/";
+        String manifestPath =  appRoot + "AndroidManifest.xml";
         String resDir = appRoot + "res";
         String assetsDir = appRoot + "assets";
         String packageName = "com.ezly.ezly_android";
+
+        File f = new File(appRoot);
+
         AndroidManifest manifest = createAppManifest(Fs.fileFromPath(manifestPath),
                 Fs.fileFromPath(resDir),
                 Fs.fileFromPath(assetsDir),

@@ -1,5 +1,7 @@
 package com.ezly.ezly_android.Presenter;
 
+import android.location.Location;
+
 import com.ezly.ezly_android.Data.EzlySearchParam;
 import com.ezly.ezly_android.Utils.Helper.LocationHerpler.EzlyAddress;
 import com.ezly.ezly_android.Utils.Helper.LocationHerpler.LocationHelper;
@@ -20,7 +22,7 @@ import javax.inject.Inject;
  * Created by Johnnie on 1/02/17.
  */
 
-public class LocationSelectMapPresenter extends BasePresenter {
+public class LocationSelectMapPresenter extends BasePresenter implements LocationListener {
 
     private LocationSelectMapView mView;
     private LocationHelper locationHelper;
@@ -45,19 +47,7 @@ public class LocationSelectMapPresenter extends BasePresenter {
             public void onGranted(String[] permissions) {
 
                 mView.getMap().setMyLocationEnabled(true);
-                locationServices.addLocationListener(new LocationListener() {
-                    @Override
-                    public void onLocationChanged(android.location.Location location) {
-                        if (location != null && !hasInitMyLocation) {
-                            hasInitMyLocation = true;
-                            mView.getMap().setCameraPosition(new CameraPosition.Builder()
-                                    .target(new LatLng(location))
-                                    .zoom(16)
-                                    .build());
-                        }
-                        locationHelper.setLastUserLocation(new EzlyAddress((float)location.getLatitude(), (float)location.getLongitude()));
-                    }
-                });
+                locationServices.addLocationListener(LocationSelectMapPresenter.this);
             }
 
             @Override
@@ -71,4 +61,17 @@ public class LocationSelectMapPresenter extends BasePresenter {
             }
         });
     }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        if (location != null && !hasInitMyLocation) {
+            hasInitMyLocation = true;
+            mView.getMap().setCameraPosition(new CameraPosition.Builder()
+                    .target(new LatLng(location))
+                    .zoom(16)
+                    .build());
+        }
+        locationHelper.setLastUserLocation(new EzlyAddress((float)location.getLatitude(), (float)location.getLongitude()));
+    }
+
 }
