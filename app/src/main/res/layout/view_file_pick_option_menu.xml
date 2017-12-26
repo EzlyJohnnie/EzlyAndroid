@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container"
+        android:background="@color/transparent"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:id="@+id/btn_upload"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/menu_item_bg_color">
+
+            <ImageView
+                android:id="@+id/iv_upload"
+                android:layout_width="14dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/upload"/>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_upload"
+                android:layout_toRightOf="@id/iv_upload"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/upload_image"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <RelativeLayout
+            android:id="@+id/btn_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/menu_item_bg_color">
+
+            <ImageView
+                android:id="@+id/iv_take_photo"
+                android:layout_width="14dp"
+                android:layout_height="17dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="6dp"
+                android:src="@drawable/camera"/>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_take_photo"
+                android:layout_toRightOf="@id/iv_take_photo"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/take_photo"
+                android:textSize="15dp"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

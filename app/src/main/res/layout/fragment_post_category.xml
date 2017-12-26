@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_40">
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/txt_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_bar"
+        android:layout_marginTop="20dp"
+        android:text="@string/post_desc"
+        android:textColor="@color/grey_66"
+        android:textSize="25sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/txt_desc"
+        android:layout_alignParentStart="true">
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:id="@+id/txt_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_need"
+            android:textColor="@color/btn_post"
+            android:textSize="20sp"/>
+
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:id="@+id/txt_provide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/i_provide"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/divider"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/category_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:clipToPadding="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/search_bar"
+        android:paddingTop="20dp"
+        android:alpha="1"/>
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_white_with_gradient"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_close"/>
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_toRightOf="@id/btn_back"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:text="@string/back"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textColor="@color/grey_66"-->
+                <!--android:id="@+id/textView" />-->
+        </LinearLayout>
+
+
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/post"
+            android:textSize="17sp"
+            android:textColor="@color/grey_66"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="top"/>
+
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/event_mapview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                mapbox:style_url="@string/style_mapbox_streets"
+                mapbox:zoom="12" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center"
+                android:text="bottom"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

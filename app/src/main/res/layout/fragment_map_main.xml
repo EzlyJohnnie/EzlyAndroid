@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        mapbox:style_url="@string/style_mapbox_streets"
+        mapbox:center_latitude="-36.846407"
+        mapbox:center_longitude="174.765931"
+        mapbox:zoom="12"/>
+
+    <com.ezly.ezly_android.UI.Widget.CircleImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/placeholder_user"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/btn_post"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/user_avatar"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_post"
+        android:visibility="gone">
+
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/btn_my_location"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp"
+        android:background="@drawable/round_bg_white_trans"
+        android:src="@drawable/my_location"/>
+
+
+    <FrameLayout
+        android:id="@+id/event_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_white_with_gradient">
+
+        <ImageView
+            android:id="@+id/btn_list_view"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bullet_list"/>
+
+        <ImageView
+            android:id="@+id/btn_notification"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_toLeftOf="@id/btn_list_view"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/notification"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/btn_notification"
+            android:background="@color/divider"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/search_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/divider"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="13dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search"/>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:id="@+id/txt_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_search"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:hint="@string/search_hint"
+                android:textSize="14sp"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/event_list"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="20dp"
+        android:clipToPadding="false"/>
+
+</RelativeLayout>

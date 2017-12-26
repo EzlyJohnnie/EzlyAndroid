@@ -1,0 +1,65 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">
+            @style/activityAnimation
+        </item>
+
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <item name="colorAccent">@color/distance_color</item>
+    </style>
+
+    <!-- animation  -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style> 1
+
+    <!--dialog style-->
+    <style name="draw_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan|stateHidden</item>
+    </style>
+
+    <style name="draw_dialog_bottom_in" parent="@style/draw_dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation_bottom_in</item>
+    </style>
+
+    <style name="draw_dialog_left_in" parent="@style/draw_dialog">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation_left_in</item>
+    </style>
+
+    <style name="DialogAnimation_bottom_in">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="DialogAnimation_left_in">
+        <item name="android:windowEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_left_out</item>
+    </style>
+
+    <style name="ActionBarTitle" parent="android:Widget.TextView">
+
+        <!-- The action bar title font -->
+        <item name="android:fontFamily">sans-serif-bold</item>
+
+        <!-- Customizes the color of the action bar title-->
+        <item name="android:textColor">#000000</item>
+
+        <!-- Customizes the size of the action bar title-->
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+</resources>

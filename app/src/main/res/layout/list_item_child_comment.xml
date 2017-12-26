@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/txt_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+        android:text="me :"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"/>
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:text="content "
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"/>
+</LinearLayout>

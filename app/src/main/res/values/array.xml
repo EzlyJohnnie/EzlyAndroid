@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="search_spinner">
+        <item>@string/need</item>
+        <item>@string/provide</item>
+        <item>@string/find_user</item>
+    </array>
+
+    <array name="expire_spinner">
+        <item>@string/one_day</item>
+        <item>@string/three_day</item>
+        <item>@string/one_week</item>
+        <item>@string/one_month</item>
+    </array>
+</resources>

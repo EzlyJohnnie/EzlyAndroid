@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/grey_F8"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/btn_job"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+
+            <ImageView
+                android:id="@+id/iv_job"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/tab_job_sel"/>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:id="@+id/txt_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/tab_job"
+                android:textSize="12sp"
+                android:textColor="@color/btn_post" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+
+            <ImageView
+                android:id="@+id/iv_service"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/tab_service"/>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:id="@+id/txt_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/tab_service"
+                android:textSize="12sp"
+                android:textColor="@color/tab_unselected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_post"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+
+            <ImageView
+                android:id="@+id/iv_post"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/tab_post"/>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:id="@+id/txt_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/post"
+                android:textSize="12sp"
+                android:textColor="@color/tab_unselected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_notification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+            <RelativeLayout
+                android:layout_width="28dp"
+                android:layout_height="28dp">
+                <ImageView
+                    android:id="@+id/iv_notification"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/tab_notification"/>
+
+                <View
+                    android:id="@+id/new_message_indicator"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/round_bg_red"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:id="@+id/txt_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/message"
+                android:textSize="12sp"
+                android:textColor="@color/tab_unselected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_my_profile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+
+            <ImageView
+                android:id="@+id/iv_my_profile"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/tab_my_profile"/>
+
+            <com.ezly.ezly_android.UI.Widget.EzlyTextView
+                android:id="@+id/txt_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/tab_profile"
+                android:textSize="12sp"
+                android:textColor="@color/tab_unselected" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/app_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tab_bar"/>
+
+    <FrameLayout
+        android:id="@+id/app_top_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

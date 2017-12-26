@@ -1,0 +1,165 @@
+<resources>
+    <string name="app_name">Ezly</string>
+    <string name="has_register_sns">First Launch</string>
+    <string name="newest_push_message">newest_push_message</string>
+
+    <string name="fb_login_protocol_scheme">fb690668487751792</string>
+    <string name="notification_number">1337</string>
+
+
+    <string name="exit_app">Do you want to exit Ezly?</string>
+
+    <string name="connection_error">Cannot connect to server.\nPlease try again.</string>
+    <string name="location_rationale">Ezly need your location permission to get your current location</string>
+    <string name="camera_permission_rationale_message">Ezly need your permission to take photo.\nPlease enable Camera permission in setting.</string>
+
+
+    <string name="back">Back</string>
+
+    <string name="search_desc">Search</string>
+    <string name="search_hint">Search</string>
+    <string name="search_box_hint">Search...</string>
+
+    <string name="near">near</string>
+    <string name="no_result">Cannot find</string>
+    <string name="no_user">Cannot find user</string>
+    <string name="slogan">Your home\nMade easy</string>
+    <string name="no_post_history">No post history found</string>
+    <string name="no_favourite">No favourites found</string>
+
+    <string name="tab_job">Find Jobs</string>
+    <string name="tab_service">Find Services</string>
+    <string name="tab_profile">Profile</string>
+
+    <string name="job">Job</string>
+    <string name="service">Service</string>
+
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+
+    <string name="away_from_string" formatted="false">%.1f KM away from you</string>
+    <string name="register">Register</string>
+    <string name="expire_in_full" formatted="false">Expire in %d day %d hours</string>
+    <string name="expire_in_hour_only" formatted="false">Expire in %d hours</string>
+    <string name="image_count" formatted="false">%d images</string>
+
+    <string name="find_service">Find services…</string>
+    <string name="find_job">Find jobs…</string>
+    <string name="find_service_full">Find handyman</string>
+    <string name="find_job_full">Provide following services</string>
+    <string name="find_user_hint">Search user...</string>
+    <string name="i_provide">Service</string>
+    <string name="i_need">Job</string>
+    <string name="provide">Provide</string>
+    <string name="comment">Comments</string>
+    <string name="find_user">Find user</string>
+    <string name="need">Need</string>
+    <string name="skip">Skip</string>
+    <string name="close">Close</string>
+    <string name="search_text_length_error">At least input 2 characters</string>
+
+    <string name="have_like" formatted="false">%d liked</string>
+    <string name="liked">Liked</string>
+    <string name="canFavourite">Favourite</string>
+    <string name="post">Post</string>
+    <string name="post_detail">Post detail</string>
+    <string name="post_desc">Post a</string>
+    <string name="setting">Settings</string>
+    <string name="location_hint">Select your location</string>
+    <string name="like_ta">Like</string>
+    <string name="dislike">Dislike</string>
+
+    <string name="post_history">Post History</string>
+    <string name="user_page">User Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="profile">Profile</string>
+    <string name="my_liked_user">Liked User</string>
+    <string name="my_favourite">Favourite Listings</string>
+    <string name="my_post_history">My Listings</string>
+    <string name="system_notification">Messages</string>
+
+    <string name="total_asked_user" formatted="false">%d user asked</string>
+
+    <string name="message">Messages</string>
+    <string name="notification">Notification</string>
+    <string name="normal_notification">Notification</string>
+    <string name="important_notification">Important Notification</string>
+    <string name="disable_notification">Disable Notification</string>
+    <string name="other">Others</string>
+    <string name="language">Language</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="logout">Logout</string>
+    <string name="company">Company</string>
+
+    <string name="owner">Owner</string>
+
+    <string name="hint_post_job_title" formatted="false">Post job for %s</string>
+    <string name="hint_post_service_title" formatted="false">Pots service for %s</string>
+    <string name="hint_post_job_desc">Please provide more details about your job</string>
+    <string name="hint_post_service_desc">Please provide more details about your service</string>
+    <string name="cancel_post">Unsaved data will be lost.\nDo you want to continue?</string>
+
+    <string name="expire">Expire in</string>
+    <string name="one_day">1 day</string>
+    <string name="three_day">3 days</string>
+    <string name="one_week">1 week</string>
+    <string name="one_month">1 month</string>
+    <string name="new_push_notification_title">New Notifications</string>
+    <string name="reply_to" formatted="false">Reply to %s</string>
+    <string name="title_empty_error">Title cannot be empty.</string>
+    <string name="post_success">Post success.</string>
+    <string name="post_fail">Post failed, please try again.</string>
+    <string name="update_success">Update success.</string>
+    <string name="update_fail">Update failed, please try again.</string>
+
+    <string name="login">Login</string>
+    <string name="login_desc">Sign in with third party services</string>
+    <string name="comment_hint">Leave your comment</string>
+    <string name="me">me</string>
+    <string name="language_chinese">中文</string>
+    <string name="english">English</string>
+    <string name="change_language_confirmation">Change language will restart Ezly app.\nDo you want to continue?</string>
+    <string name="cancel_upload_confirm">Back will cancel posting, do you want to continue?</string>
+    <string name="delete_posting_confirm" formatted="false">Do you want to delete the posting \"%s\"?</string>
+    <string name="my_address">My Address</string>
+    <string name="no_address_str">No saved address</string>
+    <string name="delete">Delete</string>
+    <string name="update">UPDATE</string>
+    <string name="address_name">Name</string>
+    <string name="line_1">Line 1*</string>
+    <string name="line_2">Line 2</string>
+    <string name="suburb">Suburb*</string>
+    <string name="city">City*</string>
+    <string name="country">Country</string>
+    <string name="zip_code">Zip code</string>
+    <string name="add_address_title">New Address</string>
+    <string name="update_address">Update Address</string>
+    <string name="clear">Clear</string>
+
+    <string name="address_operation_add">add</string>
+    <string name="address_operation_delete">delete</string>
+    <string name="address_operation_update">update</string>
+    <string name="address_operation_format_str" formatted="false">Address %s success.</string>
+    <string name="address_operation_error_format_str" formatted="false">Cannot %s address.</string>
+    <string name="select_address">Select Address</string>
+    <string name="loading" translatable="false">Loading...</string>
+    <string name="current_address">Current location</string>
+    <string name="cannot_find_address">Cannot find your address, please try again.</string>
+    <string name="login_failed">Cannot login with third party service</string>
+    <string name="we_chat_not_install">Cannot find WeChat app.\nPlease download WeChat from Google Play Store and try again.</string>
+    <string name="all_category">All</string>
+    <string name="inactivie">Unpublished</string>
+    <string name="upload_image">Upload images</string>
+    <string name="take_photo">Take photo</string>
+    <string name="cannot_add_self_favourite">Cannot add your own posting to favourite.</string>
+    <string name="about_us">About Us</string>
+    <string name="login_in">Login to Ezly</string>
+    <string name="notification_login_desc">Sign in with third party services to see your message</string>
+    <string name="empty_notification">No message found</string>
+    <string name="load_notification_failed">Cannot load message</string>
+    <string name="notification_send_time" formatted="false">%d %s ago.  %d.%d</string>
+    <string name="notification_content" formatted="false">%s has commented to your posting [%s], click to view.</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="35dp"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <com.ezly.ezly_android.UI.Widget.CircleImageView
+        android:id="@+id/iv_my_avatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/placeholder_user"
+        android:layout_centerHorizontal="true" />
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_avatar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/grey_66"
+        android:textSize="20sp"/>
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/txt_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="35dp"
+        android:textColor="@color/grey_85"
+        android:textSize="16sp"/>
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/btn_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_below="@id/txt_like"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="@string/like_ta"
+        android:background="@drawable/like_btn_bg"
+        android:visibility="visible"/>
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="20dp"
+        android:text="@string/post_history"
+        android:textColor="@color/grey_A0"
+        android:textSize="15sp"
+        android:background="@color/grey_F8"
+        android:visibility="visible"/>
+
+</LinearLayout>

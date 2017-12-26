@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/title_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.ezly.ezly_android.UI.Widget.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/placeholder_user"/>
+
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:id="@+id/txt_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:text="user name"
+            android:textColor="@color/dark_grey"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/txt_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_view"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="70dp"
+        android:paddingRight="20dp"
+        android:text="content content content content content content"
+        android:textColor="@color/dark_grey"
+        android:textSize="16sp"/>
+
+    <com.ezly.ezly_android.UI.Widget.EzlyTextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:text="02 Dec 2016"
+        android:textColor="@color/grey_B2"
+        android:textSize="12sp"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/child_comments_pnl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="15dp"
+            android:background="@color/divider"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

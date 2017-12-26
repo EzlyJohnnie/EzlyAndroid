@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Ezly</string>
+    <string name="has_register_sns">First Launch</string>
+    <string name="newest_push_message">newest_push_message</string>
+
+    <string name="fb_login_protocol_scheme">fb690668487751792</string>
+    <string name="notification_number">1337</string>
+
+
+    <string name="exit_app">是否确定要退出Ezly?</string>
+
+    <string name="connection_error">无法连接服务器.\请重试.</string>
+    <string name="location_rationale">Ezly需要您的位置权限以获取当前位置</string>
+    <string name="camera_permission_rationale_message">Ezly需要您的权限来使用照相功能</string>
+
+    <string name="back">返回</string>
+
+    <string name="search_desc">搜索</string>
+    <string name="search_hint">输入关键词</string>
+    <string name="search_box_hint">我有其他需要...</string>
+
+    <string name="near">附近</string>
+    <string name="no_result">没有找到相应的</string>
+    <string name="no_user">没有找到相应的用户</string>
+    <string name="slogan">Your home\nMade easy</string>
+    <string name="no_post_history">没有发布历史</string>
+    <string name="no_favourite">没有收藏</string>
+
+
+    <string name="tab_job">找求助</string>
+    <string name="tab_service">找服务</string>
+    <string name="tab_profile">个人中心</string>
+
+    <string name="job">求助</string>
+    <string name="service">服务</string>
+
+    <string name="day">天</string>
+    <string name="days">天</string>
+    <string name="hour">小时</string>
+    <string name="hours">小时</string>
+
+    <string name="away_from_string" formatted="false">距离你 %.1f KM</string>
+    <string name="register">新建账户</string>
+    <string name="expire_in_full" formatted="false">信息有效期剩余 %d天%d小时</string>
+    <string name="expire_in_hour_only" formatted="false">信息有效期剩余 %d小时</string>
+    <string name="image_count" formatted="false">%d张图片</string>
+
+    <string name="find_service">找人帮我做…</string>
+    <string name="find_job">我提供服务…</string>
+    <string name="find_service_full">找 handyman 帮我做</string>
+    <string name="find_job_full">我可以提供以下服务</string>
+    <string name="find_user_hint">输入对方名字</string>
+    <string name="i_provide">服务</string>
+    <string name="i_need">求助</string>
+    <string name="provide">提供</string>
+    <string name="comment">留言</string>
+    <string name="find_user">找人</string>
+    <string name="need">需要</string>
+    <string name="skip">跳过</string>
+    <string name="close">关闭</string>
+    <string name="search_text_length_error">搜索内容至少2个字符</string>
+
+    <string name="have_like" formatted="false">获赞 %d次</string>
+    <string name="liked">赞过</string>
+    <string name="canFavourite">收藏</string>
+    <string name="post">发布</string>
+    <string name="post_detail">描述细节</string>
+    <string name="post_desc">发布</string>
+    <string name="setting">设置</string>
+    <string name="location_hint">请选择大概的服务地点</string>
+    <string name="like_ta">赞TA</string>
+    <string name="dislike">取消点赞</string>
+    <string name="post_history">已发布的信息</string>
+    <string name="user_page">个人主页</string>
+    <string name="my_profile">个人中心</string>
+    <string name="profile">账号</string>
+    <string name="my_liked_user">点赞过的用户</string>
+    <string name="my_favourite">收藏事件</string>
+    <string name="my_post_history">我的事项</string>
+    <string name="system_notification">信息</string>
+
+    <string name="total_asked_user" formatted="false">已有%d人提问</string>
+
+    <string name="message">信息</string>
+    <string name="notification">推送</string>
+    <string name="normal_notification">接收推送</string>
+    <string name="important_notification">重要消息</string>
+    <string name="disable_notification">关闭通知</string>
+    <string name="other">其他</string>
+    <string name="language">界面语言</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="logout">退出登录</string>
+    <string name="company">Company</string>
+
+    <string name="owner">主人</string>
+
+    <string name="hint_post_job_title" formatted="false">发布 %s 的工作</string>
+    <string name="hint_post_service_title" formatted="false">发布 %s 的服务</string>
+    <string name="hint_post_job_desc">如有额外要求，详细描述会帮助你获得更加匹配的服务提供者</string>
+    <string name="hint_post_service_desc">如有额外描述，会更方便客户了解你所提供的服务</string>
+    <string name="cancel_post">确认要退出发布?\n退出发布会丢失已输入的信息。</string>
+
+    <string name="expire">有效期</string>
+    <string name="one_day">一天</string>
+    <string name="three_day">三天</string>
+    <string name="one_week">一周</string>
+    <string name="one_month">一个月</string>
+    <string name="new_push_notification_title">新推送</string>
+    <string name="reply_to" formatted="false">回复 %s</string>
+    <string name="title_empty_error">标题不能为空</string>
+    <string name="post_success">发布成功</string>
+    <string name="update_success">更新成功</string>
+    <string name="post_fail">发布失败,请再试一次</string>
+    <string name="update_fail">更新失败,请再试一次</string>
+
+    <string name="login">登陆</string>
+    <string name="login_desc">通过以下平台登陆\n获得会员服务</string>
+    <string name="comment_hint">输入你的问题</string>
+    <string name="me">我</string>
+    <string name="language_chinese">中文</string>
+    <string name="english">English</string>
+    <string name="change_language_confirmation">切换语言需要重新启动Ezly\n是否继续?</string>
+    <string name="cancel_upload_confirm">返回会取消发布,是否继续?</string>
+    <string name="delete_posting_confirm" formatted="false">是否确定删除事件\"%s\"?</string>
+    <string name="no_address_str">未找到保存的地址</string>
+    <string name="my_address">我的地址</string>
+    <string name="delete">删除</string>
+    <string name="update">更新</string>
+    <string name="address_name">名称</string>
+    <string name="line_1">地址*</string>
+    <string name="line_2">地址</string>
+    <string name="suburb">区*</string>
+    <string name="city">市*</string>
+    <string name="country">国家</string>
+    <string name="zip_code">邮编</string>
+    <string name="add_address_title">添加地址</string>
+    <string name="update_address">更新地址</string>
+    <string name="clear">清除</string>
+
+    <string name="address_operation_add">添加</string>
+    <string name="address_operation_delete">删除</string>
+    <string name="address_operation_update">更新</string>
+    <string name="address_operation_format_str" formatted="false">%s地址成功</string>
+    <string name="address_operation_error_format_str" formatted="false">无法%s地址</string>
+    <string name="select_address">选择地址</string>
+    <string name="current_address">当前地址</string>
+    <string name="login_failed">无法通过三方服务登入</string>
+    <string name="we_chat_not_install">无法找到微信\n请下载微信后重试</string>
+    <string name="all_category">全部分类</string>
+    <string name="upload_image">上传照片</string>
+    <string name="take_photo">拍摄照片</string>
+    <string name="cannot_add_self_favourite">不能收藏自己发布的事项</string>
+    <string name="about_us">关于我们</string>
+    <string name="login_in">正在登录Ezly</string>
+    <string name="notification_login_desc">通过以下平台登陆\n获得会员服务来获取您的消息</string>
+    <string name="empty_notification">没有找到相应的信息</string>
+    <string name="load_notification_failed">加载信息失败</string>
+    <string name="notification_send_time" formatted="false">%d%s前 %d.%d</string>
+    <string name="notification_content" formatted="false">用户%s在你发布的[%s]信息下留言,请及时查看</string>
+    <string name="cannot_find_address">无法找到你的地址, 请重试.</string>
+    <string name="inactivie">下架</string>
+
+</resources>

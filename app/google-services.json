@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1048940205919",
+    "project_id": "ezly-142707"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048940205919:android:d2b280fbabbd3e9b",
+        "android_client_info": {
+          "package_name": "com.ezly.ezly_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048940205919-qdjcv4jhgnhv31a267ko6hod2b6c9fnt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ezly.ezly_android",
+            "certificate_hash": "E0090C8961392649199D3806474624007CA4CD39"
+          }
+        },
+        {
+          "client_id": "1048940205919-d181ha3kj2j0fq9tg922kfctsodkolrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZN155L3wXl4OEatDaTvQnFAwGX31xsM4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

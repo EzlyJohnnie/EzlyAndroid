@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:id="@+id/btn_chinese"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_item_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/language_chinese"
+            android:textSize="15dp"
+            android:textColor="@color/btn_post"
+            android:background="@drawable/menu_item_bg_color"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:id="@+id/btn_english"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_item_height"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/english"
+            android:textSize="15dp"
+            android:textColor="@color/btn_post"
+            android:background="@drawable/menu_item_bg_color"/>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container"
+        android:background="@color/transparent"/>
+
+</RelativeLayout>

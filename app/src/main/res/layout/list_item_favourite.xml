@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_visible"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/preview"
+            android:background="@drawable/round_bg_disable"/>
+
+        <ImageView
+            android:id="@+id/btn_edit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/edit"
+            android:background="@drawable/round_bg_yellow"/>
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/trash"
+            android:background="@drawable/round_bg_red"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/white">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            app:riv_corner_radius="5dp"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/btn_unfavourite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/saved"/>
+
+        <com.ezly.ezly_android.UI.Widget.CircleImageView
+            android:id="@+id/iv_category"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ct_house_fix"
+            android:visibility="visible"/>
+
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_category"
+            android:layout_toLeftOf="@id/iv_image"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@id/iv_category"
+            android:maxLines="1"
+            android:textSize="18sp"
+            android:text="title"
+            android:textColor="@color/black"
+            android:ellipsize="end"/>
+
+
+        <com.ezly.ezly_android.UI.Widget.EzlyTextView
+            android:id="@+id/txt_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_toRightOf="@id/iv_category"
+            android:layout_toLeftOf="@id/iv_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="desc"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/invisible_cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_transparent_80"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/tool_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:weightSum="3"-->
+        <!--android:layout_below="@id/content_view"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:gravity="right">-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btn_visible"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/unsaved"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btn_edit"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/unsaved"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btn_delete"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/unsaved"/>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btn_unfavourite"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="5dp"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/unsaved"/>-->
+
+    <!--</LinearLayout>-->
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/content_view"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/divider"/>
+
+</RelativeLayout>
