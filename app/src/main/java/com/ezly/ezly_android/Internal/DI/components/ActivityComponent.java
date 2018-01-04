@@ -16,6 +16,7 @@
 package com.ezly.ezly_android.Internal.DI.components;
 
 
+import com.ezly.ezly_android.DB.EzlyDBHelper;
 import com.ezly.ezly_android.Internal.DI.PerActivity;
 import com.ezly.ezly_android.Internal.DI.modules.ActivityModule;
 import com.ezly.ezly_android.UI.Address.EzlyAddressDetailFragment;

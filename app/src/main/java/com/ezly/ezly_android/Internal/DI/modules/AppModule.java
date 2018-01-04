@@ -1,6 +1,8 @@
 package com.ezly.ezly_android.Internal.DI.modules;
 
+import com.ezly.ezly_android.DB.EzlyDBHelper;
 import com.ezly.ezly_android.EzlyApplication;
+import com.ezly.ezly_android.Internal.DI.PerActivity;
 import com.ezly.ezly_android.Utils.Helper.GAHelper;
 
 import javax.inject.Singleton;

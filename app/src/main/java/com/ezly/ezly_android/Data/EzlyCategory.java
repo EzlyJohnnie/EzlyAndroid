@@ -4,14 +4,30 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 import com.google.gson.annotations.Expose;
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
 
 /**
  * Created by Johnnie on 20/10/16.
  */
+@DatabaseTable(tableName = "ezly_category")
 public class EzlyCategory implements Parcelable {
-    @Expose private String id;
-    @Expose private String code;
-    @Expose private String name;
+
+    @Expose
+    @DatabaseField(generatedId = true)
+    private int _dbID;//never used in app
+
+    @Expose
+    @DatabaseField(columnName = "id")
+    private String id;
+
+    @Expose
+    @DatabaseField(columnName = "code")
+    private String code;
+
+    @Expose
+    @DatabaseField(columnName = "name")
+    private String name;
 
 
     public String getCode() {

@@ -17,7 +17,7 @@ android {
         config {
             keyAlias 'Ezly_keyStore'
             keyPassword 'Ezly_keyStore'
-            storeFile file('/Users/Johnnie/Documents/Project/EzlyHomeAndroid/Ezly_Android/app/key_store/Ezly_keyStore.jks')
+            storeFile file('/Users/Johnnie/Documents/Project/EzlyAndroid/app/key_store/Ezly_keyStore.jks')
             storePassword 'Ezly_keyStore'
         }
     }
@@ -96,7 +96,6 @@ dependencies {
     testCompile 'org.robolectric:robolectric:3.1'
     testCompile 'org.robolectric:shadows-multidex:3.1'
     testCompile 'org.mockito:mockito-core:2.1.0'
-
     //android
     compile 'com.android.support:multidex:1.0.1'
     compile "com.android.support:appcompat-v7:$supportLibrariesVersion"

@@ -2,6 +2,7 @@ package com.ezly.ezly_android.DI.Module;
 
 import android.content.Context;
 
+import com.ezly.ezly_android.DB.EzlyDBHelper;
 import com.ezly.ezly_android.EzlyTestClasses.TestPermissionHelper;
 import com.ezly.ezly_android.Utils.Helper.ImagePickerHelper;
 import com.ezly.ezly_android.Utils.Helper.LocationHerpler.LocationHelper;
@@ -153,4 +154,8 @@ public class TestActivityModule {
         return Mockito.spy(new LocationSelectMapPresenter(provideLocationHelper(), provideLocationServices()));
     }
 
+    @Provides @PerActivity
+    public EzlyDBHelper provideDBHelper(){
+        return Mockito.spy(EzlyDBHelper.getInstance(context));
+    }
 }

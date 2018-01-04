@@ -18,6 +18,7 @@ package com.ezly.ezly_android.Internal.DI.modules;
 
 import android.content.Context;
 
+import com.ezly.ezly_android.DB.EzlyDBHelper;
 import com.ezly.ezly_android.Utils.Helper.ImagePickerHelper;
 import com.ezly.ezly_android.Utils.Helper.LocationHerpler.LocationHelper;
 import com.ezly.ezly_android.Utils.Helper.MemberHelper;
@@ -89,6 +90,11 @@ public class ActivityModule {
   @Provides @PerActivity
   public PermissionHelper providePermissionHelper(){
     return PermissionHelper.getInstance();
+  }
+
+  @Provides @PerActivity
+  public EzlyDBHelper provideDBHelper(){
+    return EzlyDBHelper.getInstance(context);
   }
 
 }

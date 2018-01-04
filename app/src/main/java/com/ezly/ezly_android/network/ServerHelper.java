@@ -258,7 +258,7 @@ public class ServerHelper {
 
 
     //category
-    public Observable<List<EzlyCategory>> getCategories(){
+    public Observable<List<EzlyCategory>> getCategories() {
         HashMap<String, String> requestParam = new HashMap<>();
 
         return api.getCategories(getTokenStr(), requestParam)
